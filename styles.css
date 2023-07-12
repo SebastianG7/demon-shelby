@@ -1,0 +1,26 @@
+#webTitle{
+    text-align: center;
+    color:chartreuse;
+}
+#shelby1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#shelby2{
+    display: block;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#s1p{
+    text-align: center;
+}
+#b1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
