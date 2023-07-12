@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    
+
+</head>
+<body>
+    
+    <h1 id="webTitle">Shelby's Spot</h1>
+    <img id="shelby1" src="shelby_sit.jpg" alt = "Shelby on the Bed" class = "center" style="width:600px;height:500px;">
+    <img id="shelby2" src="shelby_sit_demon.jpg" alt = "Shelby Demon" class = "center" style="width:600px;height:500px;">
+    <h2 id = "s1p">This is a large cat. His name is Shelby</h2>
+    
+    <button id="b1" onclick="demonMode()">Demon Mode</button>
+
+    <script>
+
+        var demonStatus = true;
+
+        function demonMode()
+        {
+            var s1 = document.getElementById("shelby1");
+            var s2 = document.getElementById("shelby2");
+            var shelbyText = document.getElementById ("s1p");
+            var shelbyTitle = document.getElementById("webTitle");
+            var shelbyButton = document.getElementById("b1");
+            
+
+
+            if (demonStatus == true){
+                demonStatus = false;
+                s1.style.display = "none";
+                s2.style.display = "block";
+                document.body.style.backgroundColor = "red";
+                shelbyText.innerText = "This is a large demon. His name is Shelby";
+                shelbyTitle.innerText = "Shelby's Domain";
+                shelbyTitle.style.color = "Orange";
+                b1.innerText = "Sleepy Mode";
+            }
+            else{
+                demonStatus = true;
+                s1.style.display = "block";
+                s2.style.display = "none";
+                document.body.style.backgroundColor = "white";
+                shelbyText.innerText = "This is a large cat. His name is Shelby";
+                shelbyTitle.innerText = "Shelby's Spot";
+                shelbyTitle.style.color = "chartreuse";
+                b1.innerText = "Demon Mode";
+            }
+        }
+    </script>
+    
+    
+
+</body>
+</html>
